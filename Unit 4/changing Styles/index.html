@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="main.js"></script>
+    <title>Changing Styles</title>
+</head>
+
+<body onload="temaNormal()">
+    <div id="azul">
+
+    </div>
+    <div id="azul2">
+        <div id="links">
+            <a href="#temaNormal" onclick="temaNormal()">Tema Normal</a>
+            <a href="#Minimalista" onclick="temaMinimalista()">Tema Minimalista</a>
+        </div>
+        <div class="cabecera">
+            <h2>Página de ejemplo</h2>
+        </div>
+        <div class="contenido">
+            <p>En esta página vamos a comprobar lo fácil que es aplicar estilos mediante CSS a un documento seleccionado
+            </p>
+            <p>Lo ideal es que al seleccionar un estilo éste permanezca siempre igual
+                que el usuario. Hasta ahora no hemos visto como hacerlo, ¿se te ocurre como hacerlo?</p>
+            <p>Utilizando CSS podemos incluso ocultar partes del sitio</p>
+            <p id="negrita">Este párrafo debe ser solo visible en el tema normal.</p>
+        </div>
+        <div id="marco">
+            <p>Esto está dentro de un marco.</p>
+        </div>
+        <div id="texto">
+
+            <p>Alfred Joseph Hitchcock nació el 13 de agosto de 1899 en Leytonstone (Inglaterra),
+                hijo menor de Emma y William Hitchcock, matrimonio de clase media que se dedicaba a al comercio de
+                verduras.
+                <br> Su hermano mayor, nacido en 1888, se llamaba William, quien falleció tras sufrir un ataque al
+                corazón en el
+                año 1943.</p><button type="button" id="texto" class="btn btn-primary"
+                onclick="aumentarTexto()">aumenta</button>
+            <button type="button" id="texto" class="btn btn-primary" onclick="decrementarTexto()">decrementa</button>
+            <button type="button" id="texto" class="btn btn-primary" onclick="justificar()">justificar</button>
+            <button type="button" id="texto" class="btn btn-primary" onclick="izquierda()">izquierda</button>
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>
